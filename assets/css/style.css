@@ -1,0 +1,22 @@
+
+h1 {
+    background-color:#4aaaa5;
+    font-size: 50px;
+    font-family: Georgia; 
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: white;
+}
+h2{
+    color: #4aaaa5;
+}
+p{
+    font-family: Helvetica;
+    color:#777777;
+}
+img {
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+}
