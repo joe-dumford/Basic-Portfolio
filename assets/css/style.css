@@ -2,11 +2,11 @@
     Global Styles
 */
 
-body { 
+/* body { 
     margin: 0;
     color: #777777;
     background: url(../images/white-waves.png) repeat;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -74,13 +74,19 @@ a:hover {
     list-style: none;
 }
 
-.navbar-name {
-    background: #4aaaa5
-}
+/* .navbar-name, .navbar-light .navbar-brand {
+    background: #4aaaa5;
+    color: white !important;
+} */
 
 .nav-item {
     color: #777777;
 }
+/* TODO: add media-query for lower resolutions */
+/* .navbar {
+    padding-left: 74px;
+    padding-right: 74px;
+} */
 
 .flex-container {
     display: flex;
@@ -92,19 +98,13 @@ a:hover {
 }
 
 .main-content {
-    margin-top: 40px;
-    background-color: #ffffff;
     border-color: #dddddd;
-    margin-bottom: 95px;
-}
-
-.content {
-    padding: 40px 30px;
 }
 
 .content .title {
    border-bottom: 2px solid #cccccc;
-   
+   margin-bottom: 20px;
+
 }
 
 .content .title h2 {
@@ -117,8 +117,7 @@ a:hover {
     background-color: #ffffff;
     border-color: #cccccc;
 } */
-
-.footer { 
+.footer {
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -131,10 +130,8 @@ a:hover {
 
 /* colors */
 .teal {
-    color: #4aaaa5; 
+    color: #4aaaa5;
 }
-
-/* portfolio page */
 
 /* contact page */
 
@@ -142,6 +139,7 @@ a:hover {
     font-size: 24px;
     display: block;
 }
+
 .contactform input {
     display: block;
     width: 100%;
@@ -153,9 +151,10 @@ a:hover {
     top: 16px;
 
 }
+
 .portpix {
     margin-top: 18px;
-} 
+}
 
 .image-wrapper {
     position: relative;
@@ -175,9 +174,18 @@ a:hover {
 }
 
 textarea {
-    width:100%;
-    min-height:200px;
+    width: 100%;
+    min-height: 200px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+.myimage {
+    max-width: 100%;
+    max-height: 200px;
+    margin-right: 15px;
+    margin-top: 6px;
+    display: block;
+    float: left;
 }
