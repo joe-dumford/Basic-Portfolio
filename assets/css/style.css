@@ -21,7 +21,7 @@ h4 {
 }
 
 h1 {
-    color: white;
+    color: salmon;
     background-color: #4aaaa5;
     text-align: left;
     display: block;
@@ -57,7 +57,7 @@ a:hover {
 
 .nav-wrapper {
     width: 100%;
-    background-color: white;
+    background-color: salmon;
 }
 
 .nav, .main-content {
@@ -122,7 +122,7 @@ a:hover {
     width: 100%;
     bottom: 0;
     background-color: #666666;
-    border-top: 4px solid #6FFFF7;
+    border-top: 4px solid salmon;
     text-align: center;
     min-height: 40px;
 
