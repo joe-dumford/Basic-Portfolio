@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Joe's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-new.css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</head>
+        <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <title>Joe's Portfolio</title>
+                <!--MaterializeCSS-->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                <!--
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css" />
+               -->
+                <!--My CSS-->
+                <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+            
+            
+                <link rel="stylesheet" type="text/css" href="assets/css/style-new.css" />
+            </head>
 
 <body>
+        <!--Dropdown Structure-->
+        <ul id="dropdown1" class="dropdown-content">
+                <li><a href="portfolio.html">All Projects</a></li>
+                <li><a href="https://joe-dumford.github.io/TriviaGame/">Trivia Game</a></li>
+                <li><a href="https://joe-dumford.github.io/gifster/">Gif Creator</a></li>
+                <li class="divider"></li>
+                <li><a href="https://joe-dumford.github.io/RealTime-TrainSchedule/">RealTime-TrainSchedule</a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper">
+                    <li class="brand-logo left" id="myName">Joe Dumford</li>
+                    <ul class="right hide-on-med-and-down" id="navButtons">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <!--Dropdown Trigger-->
+                        <li><a class="dropdown-trigger" href="assets/logic.js" data-target="dropdown1">Dropdown<i
+                                    class="material-icons right"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+    <!-- OLD NAV BELOW
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <!-- Name -->
+           ~Name~
             <a class="navbar-brand navbar-name">Joe Dumford</a>
-            <!-- nav links -->
+            ~nav links~
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
@@ -34,6 +62,7 @@
             </ul>
         </div>
     </nav>
+-->
 
     <div class="container-fluid">
         <div class="content">
