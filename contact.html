@@ -1,76 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-        <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-                <title>Joe's Portfolio</title>
-                <!--MaterializeCSS-->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-                <!--
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css" />
-               -->
-                <!--My CSS-->
-                <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-            
-            
-                <link rel="stylesheet" type="text/css" href="assets/css/style-new.css" />
-            </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joe's Portfolio</title>
+     <!--FontAwesome-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--MaterializeCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--My JS-->
+    <script type="text/javascript" src="./assets/logic.js"></script>
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style-new.css" />
+
+</head>
 
 <body>
-
-     <!--Dropdown Structure-->
-     <ul id="dropdown1" class="dropdown-content">
-            <li><a href="portfolio.html">All Projects</a></li>
-            <li><a href="https://joe-dumford.github.io/TriviaGame/">Trivia Game</a></li>
-            <li><a href="https://joe-dumford.github.io/gifster/">Gif Creator</a></li>
-            <li class="divider"></li>
-            <li><a href="https://joe-dumford.github.io/RealTime-TrainSchedule/">RealTime-TrainSchedule</a></li>
-        </ul>
-        <nav>
-            <div class="nav-wrapper">
-                <li class="brand-logo left" id="myName">Joe Dumford</li>
-                <ul class="right hide-on-med-and-down" id="navButtons">
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <!--Dropdown Trigger-->
-                    <li><a class="dropdown-trigger" href="assets/logic.js" data-target="dropdown1">Dropdown<i
-                                class="material-icons right"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- OLD NAV BELOW
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--BIG NAV-->
+    <nav class="nav-wrapper">
         <div class="container">
-            ~Name~
-            <a class="navbar-brand navbar-name">Joe Dumford</a>
-            ~nav links~
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+            <a href="#" class="brand-logo center-on-med-and-down" id="myName">Joe Dumford</a>
+            <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+                <i class="material-icons" id="burger">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down" id="navButtons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="http://github.com/joe-dumford">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/joe-dumford/">LinkedIn</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
--->
+
+    <!--SIDEBAR NAV-->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="http://github.com/joe-dumford">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/joe-dumford/">LinkedIn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
 
     <div class="container-fluid">
         <div class="content">
             <div class="col-12">
                 <div class="row title">
-                    <h4>Contact</h4>
+                    <h2>Contact</h2>
                 </div>
 
                 <form class="contactform">
@@ -85,21 +71,22 @@
                     <textarea class="form-control" name="message"></textarea>
 
                     <div>
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button class="btn waves-effect waves-dark" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-
     <div class="footer"></div>
-
+    <!--Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!--My JS-->
-    <script src="assets/logic.js"></script>
 </body>
 
 </html>

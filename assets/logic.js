@@ -1,7 +1,4 @@
-$(document).ready(function(){
-    $(".dropdown-trigger").dropdown({ hover: true});
+jQuery(document).ready(function ($) {
+    $('.sidenav').sidenav();
+   
 });
-
-
-
-

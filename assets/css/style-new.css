@@ -1,27 +1,32 @@
-body { 
-    background: url(../images/background.jpg ) repeat;
+body {
+    background: url(../images/blackBack.jpg ) repeat;
 }
 
 .content {
     margin-top: 40px;
     margin-bottom: 95px;
+    margin-right: 25px;
+    margin-left: 25px;
     padding: 30px 20px;
     background-color: #666666;
-    color:rgba(240, 248, 255, 0.818);
+    color: rgba(240, 248, 255, 0.818);
 }
+
+/*===================================NAVBAR======================================*/
 .nav-wrapper {
     width: 100%;
     background-color: #666666;
     border-bottom: 4px solid salmon;
-    color:salmon;
+    color: salmon;
     padding-left: 10px;
 }
 
-.navbar-name, .navbar-light .navbar-brand {
+.navbar-name,
+.navbar-light .navbar-brand {
     background: #4aaaa5;
     font-size: 24px;
     padding-left: 0.5em;
-    padding-right: 0.5em; 
+    padding-right: 0.5em;
 }
 
 .navbar .navbar-nav {
@@ -31,10 +36,53 @@ body {
 .navbar .navbar-nav .nav-item:not(:last-of-type) {
     margin-right: 0.25em;
     border-right: 1px solid grey;
-    padding-right: 0.25em; 
+    padding-right: 0.25em;
 }
 
-.content{
+#myName {
+    color: darkslategray;
+    font-family: 'Cinzel', serif;
+}
+
+#navButtons a {
+    color: darkslategray;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: darkslategray;
+    color: rgba(240, 248, 255, 0.66);
+}
+
+#burger {
+    color: darkslategray;
+    font-size: 50px;
+}
+
+#mobile-nav {
+    background-color: rgba(97, 133, 97, 0.872);
+
+}
+
+.sidenav li>a {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: rgba(250, 128, 114, 0.776);
+}
+
+.sidenav li>a:hover {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    background-color: rgba(47, 79, 79, 0.756);
+    color: darksalmon;
+    font-size: 30px;
+    transition: 1s ease;
+
+}
+/*===================================NAVBAR======================================*/
+
+.content {
     overflow: hidden;
 }
 
@@ -44,20 +92,37 @@ body {
 }
 
 h2 {
-    color:  darkslategray;
-}
-#myName{
     color: darkslategray;
-    font-family: 'Cinzel', serif;
-}
-
-#navButtons a { 
-    color: darkslategray;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
 }
 
 /* Old CSS Stuff */
+
+.image-wrapper .banner {
+    position: absolute;
+    top: 90px;
+    background-color: rgb(97, 133, 97);
+    color: darksalmon;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.image-wrapper .banner:hover {
+    font-size: 25px;
+    transition: 0.5s;
+
+}
+
+/*=================================CONTACT PAGE==================================*/
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.5s 0.5s ease; 
+    opacity: 0;
+  }
+
+/*=================================CONTACT PAGE==================================*/
+
 
 
 .footer {
@@ -70,9 +135,8 @@ h2 {
     min-height: 40px;
 }
 
-a:hover {
-    color: white;
-}
+
+
 
 /* contact page 
 
