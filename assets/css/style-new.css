@@ -43,6 +43,9 @@ body {
     color: darkslategray;
     font-family: 'Cinzel', serif;
 }
+.contactInfo {
+    color: darksalmon;
+}
 
 #navButtons a {
     color: darkslategray;
